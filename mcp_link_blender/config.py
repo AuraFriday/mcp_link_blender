@@ -1,17 +1,24 @@
-# MCP-Link for Blender - Configuration
-# =====================================
+"""
+File: config.py
+Project: MCP-Link Blender Extension
+Component: Configuration settings
+Author: Christopher Nathan Drake (cnd)
+Created: 2025-01-03
+SPDX-License-Identifier: GPL-3.0-or-later
+Copyright: (c) 2025 Christopher Nathan Drake. All rights reserved.
+"""
 
 # Enable debug logging
 DEBUG = True
 
-# Enable MCP client debug logging (very verbose)
+# Enable MCP-specific debug logging (very verbose)
 MCP_DEBUG = False
 
-# Automatically connect to MCP server on startup
+# Auto-connect to MCP server on extension load
 MCP_AUTO_CONNECT = True
 
-# Tool name as registered with the MCP server
+# Tool name as it appears in MCP
 TOOL_NAME = "blender"
 
-# Maximum retry delay in seconds for reconnection attempts
-MAX_RETRY_DELAY = 60
+# Reconnection settings
+MAX_RETRY_DELAY = 60  # Maximum seconds between reconnection attempts

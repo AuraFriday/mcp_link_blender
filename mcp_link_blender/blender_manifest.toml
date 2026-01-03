@@ -6,7 +6,7 @@ tagline = "Connect AI agents to Blender via Model Context Protocol (MCP)"
 maintainer = "Christopher Nathan Drake <cnd@aurafriday.com>"
 type = "add-on"
 tags = ["Development", "Pipeline", "System"]
-blender_version_min = "4.2.0"
+blender_version_min = "5.0.0"
 license = ["SPDX:GPL-3.0-or-later"]
 website = "https://github.com/AuraFriday/mcp_link_blender"
 
