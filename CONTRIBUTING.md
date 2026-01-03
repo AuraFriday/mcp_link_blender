@@ -6,8 +6,8 @@ Thank you for your interest in contributing to MCP-Link for Blender! We welcome 
 
 ### Reporting Bugs
 
-1. Check the [existing issues](https://github.com/AuraFriday/MCP-Link-Blender/issues) to see if the bug has already been reported
-2. If not, [open a new issue](https://github.com/AuraFriday/MCP-Link-Blender/issues/new) with:
+1. Check the [existing issues](https://github.com/AuraFriday/mcp_link_blender/issues) to see if the bug has already been reported
+2. If not, [open a new issue](https://github.com/AuraFriday/mcp_link_blender/issues/new) with:
    - A clear, descriptive title
    - Steps to reproduce the bug
    - Expected vs actual behavior
@@ -16,7 +16,7 @@ Thank you for your interest in contributing to MCP-Link for Blender! We welcome 
 
 ### Suggesting Features
 
-1. [Open a new issue](https://github.com/AuraFriday/MCP-Link-Blender/issues/new) with the "enhancement" label
+1. [Open a new issue](https://github.com/AuraFriday/mcp_link_blender/issues/new) with the "enhancement" label
 2. Describe the feature and why it would be useful
 3. Include any relevant examples or mockups
 
@@ -25,7 +25,7 @@ Thank you for your interest in contributing to MCP-Link for Blender! We welcome 
 1. **Fork the repository** on GitHub
 2. **Clone your fork** locally:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/MCP-Link-Blender.git
+   git clone https://github.com/YOUR-USERNAME/mcp_link_blender.git
    cd MCP-Link-Blender
    ```
 3. **Create a branch** for your changes:
@@ -60,7 +60,7 @@ Before submitting:
 
 ```bash
 # Clone the repository
-git clone https://github.com/AuraFriday/MCP-Link-Blender.git
+git clone https://github.com/AuraFriday/mcp_link_blender.git
 cd MCP-Link-Blender
 
 # Build the extension
@@ -76,6 +76,6 @@ By contributing to MCP-Link for Blender, you agree that your contributions will 
 
 ## Questions?
 
-Feel free to [open an issue](https://github.com/AuraFriday/MCP-Link-Blender/issues) or contact us at ask@aurafriday.com.
+Feel free to [open an issue](https://github.com/AuraFriday/mcp_link_blender/issues) or contact us at ask@aurafriday.com.
 
 Thank you for helping improve MCP-Link for Blender!

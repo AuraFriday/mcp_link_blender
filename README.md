@@ -43,7 +43,7 @@ Unlike traditional add-ons, MCP-Link provides **infrastructure**. It's a bridge 
 
 ### Method 2: From ZIP File
 
-1. Download `mcp_link_blender-x.x.x.zip` from [releases](https://github.com/AuraFriday/MCP-Link-Blender/releases)
+1. Download `mcp_link_blender-x.x.x.zip` from [releases](https://github.com/AuraFriday/mcp_link_blender/releases)
 2. Open Blender
 3. Go to **Edit → Preferences → Add-ons**
 4. Click **Install from Disk...**
@@ -88,7 +88,7 @@ blender --command extension install-file -r user_default -e mcp_link_blender-1.0
 
 ```bash
 # Clone the repository
-git clone https://github.com/AuraFriday/MCP-Link-Blender.git
+git clone https://github.com/AuraFriday/mcp_link_blender.git
 cd MCP-Link-Blender
 
 # Build the extension
@@ -156,7 +156,6 @@ Created by [Aura Friday](https://aurafriday.com) - Trusted by 15,000+ users of p
 ---
 
 **Links:**
-- [Documentation](https://aurafriday.com/mcp-link)
 - [MCP-Link Server Download](https://aurafriday.com/downloads/)
-- [GitHub Repository](https://github.com/AuraFriday/MCP-Link-Blender)
-- [Issue Tracker](https://github.com/AuraFriday/MCP-Link-Blender/issues)
+- [GitHub Repository](https://github.com/AuraFriday/mcp_link_blender/)
+- [Issue Tracker](https://github.com/AuraFriday/mcp_link_blender/issues)
