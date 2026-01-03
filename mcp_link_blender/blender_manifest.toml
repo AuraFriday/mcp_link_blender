@@ -1,0 +1,36 @@
+schema_version = "1.0.0"
+
+id = "mcp_link_blender"
+version = "1.0.0"
+name = "MCP-Link for Blender"
+tagline = "Connect AI agents to Blender via Model Context Protocol (MCP)"
+
+maintainer = "Christopher Nathan Drake <cnd@aurafriday.com>"
+type = "add-on"
+
+blender_version_min = "4.2.0"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+[build]
+paths_exclude_pattern = [
+  "__pycache__/",
+  "*.pyc",
+  ".git/",
+]
+
+# Permissions required for MCP network communication
+[permissions]
+network = "MCP-Link requires network access to communicate with the local MCP server"
+files = "MCP-Link may read/write files for render output and data exchange"
+
+# Extension website and documentation
+website = "https://aurafriday.com/mcp-link"
+
+# Tags for discoverability
+tags = ["Development", "Pipeline", "System"]
+
+# No external wheel dependencies needed
+wheels = []
