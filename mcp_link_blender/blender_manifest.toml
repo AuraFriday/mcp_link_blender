@@ -1,8 +1,8 @@
 schema_version = "1.0.0"
 id = "mcp_link_blender"
-name = "MCP-Link for Blender"
-version = "1.0.0"
-tagline = "Connect AI agents to Blender via Model Context Protocol (MCP)"
+name = "MCP-Link"
+version = "1.0.2"
+tagline = "Connect AI agents via Model Context Protocol (MCP)"
 maintainer = "Christopher Nathan Drake <cnd@aurafriday.com>"
 type = "add-on"
 tags = ["Development", "Pipeline", "System"]
@@ -10,8 +10,51 @@ blender_version_min = "5.0.0"
 license = ["SPDX:GPL-3.0-or-later"]
 website = "https://github.com/AuraFriday/mcp_link_blender"
 
+description = """
+⚠️ CRITICAL SECURITY WARNING ⚠️
+
+This extension gives AI agents COMPLETE, UNRESTRICTED access to:
+- The ENTIRE Python API (bpy.ops, bpy.data, bpy.context, bpy.types)
+- Arbitrary Python code execution via exec()
+- File system read/write operations
+- Network operations and system commands
+- All loaded add-ons and global application state
+
+THE AI CAN DO ANYTHING YOU CAN DO - including deleting files, accessing private data, 
+making network requests, and executing system commands. There are NO restrictions.
+
+⚠️ ONLY USE IF YOU TRUST THE MCP SERVER AND AI AGENTS COMPLETELY ⚠️
+
+This extension is intended for:
+- Developers who understand the security implications
+- Controlled environments where the MCP server is trusted
+- AI-assisted automation where security is managed externally
+
+DO NOT USE THIS if you do not understand what arbitrary code execution means.
+
+---
+
+How it works:
+- Connects to a local MCP-Link server via HTTP/SSE
+- Registers as a remote tool that AI agents can discover and control
+- Receives commands from AI and executes them with full privileges
+- Uses bpy.app.timers for thread-safe main-thread execution
+
+Capabilities:
+- Execute arbitrary Python code with bpy, mathutils, and all standard libraries
+- Direct API calls to any bpy.ops operator or bpy.data accessor
+- Call other MCP tools (databases, browsers, user interfaces) from within Python
+- Persistent Python sessions that maintain variables across calls
+
+Technical notes:
+- Network threads handle MCP communication (no Blender API calls from threads)
+- All Blender API calls are queued and executed on the main thread via bpy.app.timers
+- This is the standard Blender-recommended pattern for background operations
+"""
+
 [permissions]
-network = "Connects to local MCP-Link server for AI agent communication"
+network = "Uses local 127.0.0.1 mcp server for AI agent communication"
+files = "Reads native messaging manifest file to discover MCP server port"
 
 [build]
 paths_exclude_pattern = [

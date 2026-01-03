@@ -17,13 +17,13 @@ For Blender 5.0+
 """
 
 bl_info = {
-  "name": "MCP-Link for Blender",
+  "name": "MCP-Link",
   "author": "Christopher Nathan Drake",
-  "version": (1 , 0 , 0),
+  "version": (1 , 0 , 1),
   "blender": (5, 0, 0),
   "location": "System",
-  "description": "Connect AI agents to Blender via Model Context Protocol (MCP)",
-  "warning": "Gives AI full access to Blender - use responsibly!",
+  "description": "Connect AI agents via Model Context Protocol (MCP)",
+  "warning": "DANGER: Gives AI UNRESTRICTED access including arbitrary code execution!",
   "doc_url": "https://aurafriday.com/mcp-link",
   "category": "Development",
 }
@@ -42,7 +42,7 @@ def register():
   from . import mcp_integration
   
   print("="*60)
-  print("MCP-Link for Blender: Starting...")
+  print("MCP-Link: Starting...")
   print("="*60)
   
   try:
@@ -66,7 +66,7 @@ def unregister():
   from . import mcp_integration
   
   print("="*60)
-  print("MCP-Link for Blender: Stopping...")
+  print("MCP-Link: Stopping...")
   print("="*60)
   
   try:
